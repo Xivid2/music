@@ -1,25 +1,30 @@
 <template>
-    <!-- eslint-disable -->
     <div>
         <Header />
 
         <!-- Introduction -->
         <section class="mb-8 py-20 text-white text-center relative">
-            <div class="absolute inset-0 w-full h-full bg-contain introduction-bg" style="background-image: url(assets/img/header.png)"></div>
+            <div
+                class="absolute inset-0 w-full h-full bg-contain introduction-bg"
+                style="background-image: url(assets/img/header.png)">
+            </div>
             <div class="container mx-auto">
                 <div class="text-white main-header-content">
                     <h1 class="font-bold text-5xl mb-5">Listen to Great Music!</h1>
                     <p class="w-full md:w-8/12 mx-auto">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                Phasellus et dolor mollis, congue augue non, venenatis elit.
-                                                Nunc justo eros, suscipit ac aliquet imperdiet, venenatis et
-                                                sapien. Duis sed magna pulvinar, fringilla lorem eget,
-                                                ullamcorper urna.
+                        Phasellus et dolor mollis, congue augue non, venenatis elit.
+                        Nunc justo eros, suscipit ac aliquet imperdiet, venenatis et
+                        sapien. Duis sed magna pulvinar, fringilla lorem eget,
+                        ullamcorper urna.
                     </p>
                 </div>
             </div>
 
-            <img class="relative block mx-auto mt-5 -mb-20 w-auto max-w-full" src="assets/img/introduction-music.png"/>
+            <img
+                class="relative block mx-auto mt-5 -mb-20 w-auto max-w-full"
+                src="assets/img/introduction-music.png"
+            />
         </section>
 
         <!-- Main Content -->
@@ -234,19 +239,23 @@
                 </div>
                 <!-- Scrub -->
                 <div class="float-left w-7 h-7 leading-3 ml-7 mt-2 player-scrub">
-                    <div class="absolute left-0 right-0 text-lg text-center mx-auto player-song-info">
+                    <div class="absolute left-0 right-0 text-lg
+                        text-center mx-auto player-song-info">
                         <span class="song-title">Song Title</span>
                         by
                         <span class="song-artist">Artist</span>
                     </div>
                     <!-- Scrub Container  -->
-                    <span class="block w-full h-2 rounded m-1 mt-2 bg-gray-200 relative cursor-pointer">
+                    <span class="block w-full h-2 rounded m-1 mt-2
+                        bg-gray-200 relative cursor-pointer">
                         <!-- Player Ball -->
                         <span class="absolute top-neg-8 text-gray-800 text-lg" style="left: 50%;">
                             <i class="fas fa-circle"></i>
                         </span>
                         <!-- Player Progress Bar-->
-                        <span class="block h-2 rounded bg-gradient-to-r from-green-500 to-green-400" style="width: 50%;"></span>
+                        <span class="block h-2 rounded bg-gradient-to-r
+                            from-green-500 to-green-400" style="width: 50%;">
+                        </span>
                     </span>
                 </div>
                 <!-- Duration -->
@@ -270,7 +279,7 @@ export default {
     Header,
     AuthModal,
   },
-}
+};
 </script>
 
 <style>

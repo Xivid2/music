@@ -39,5 +39,5 @@ export default {
   methods: {
     ...mapMutations(['toggleAuthModal']),
   },
-}
+};
 </script>
