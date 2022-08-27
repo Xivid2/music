@@ -6,6 +6,7 @@ import store from './store';
 import VeeValidatePlugin from './plugins/validation';
 import './assets/tailwind.css';
 import './assets/main.css';
+import './includes/firebase';
 
 const app = createApp(App);
 
