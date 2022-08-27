@@ -33,20 +33,20 @@ export default {
     defineRule('alpha_spaces', alphaSpaces);
 
     configure({
-      generateMessage: (ctx) => {
+      generateMessage: ({ field, rule }) => {
         const messages = {
-          required: `The field ${ctx.field} is required.`,
-          min: `The field ${ctx.field} is too short.`,
-          max: `The field ${ctx.field} is too long.`,
-          alpha_spaces: `The field ${ctx.field} may only contain alphabetic characters and spaces.`,
-          email: `The field ${ctx.field} must be a valid email.`,
-          min_value: `The field ${ctx.field} is too low.`,
-          max_value: `The field ${ctx.field} is too high.`,
+          required: `The field ${field} is required.`,
+          min: `The field ${field} is too short.`,
+          max: `The field ${field} is too long.`,
+          alpha_spaces: `The field ${field} may only contain alphabetic characters and spaces.`,
+          email: `The field ${field} must be a valid email.`,
+          min_value: `The field ${field} is too low.`,
+          max_value: `The field ${field} is too high.`,
           passwords_mismatch: "The password don't match.",
           tos: 'You must accept the Terms of Service.',
         };
 
-        const message = messages[ctx.rule.name] ? messages[ctx.rule.name] : `The field ${ctx.field} is invalid.`;
+        const message = messages[rule.name] ? messages[rule.name] : `The field ${field} is invalid.`;
 
         return message;
       },
